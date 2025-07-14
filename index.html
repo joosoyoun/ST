@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta soyeon="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 칭찬스티커 도장판 🌟</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 칭찬스티커 도장판 ��</h1>
+            <div class="student-Soyeon" id="studentsoyeon"></div>
+            <p class="subtitle">10개의 도장을 모으면 특별한 선물을 받을 수 있어요!</p>
+        </div>
+
+        <div class="sticker-board">
+            <div class="bunny-grid">
+                <div class="bunny-slot" data-index="0">
+                    <div class="bunny-ear left-ear"></div>
+                    <div class="bunny-ear right-ear"></div>
+                    <div class="bunny-face">
+                        <span class="bunny-number">1</span>
+                        <span class="bunny-stamp"></span>
+                    </div>
+                </div>
+                <div class="bunny-slot" data-index="1">
+                    <div class="bunny-ear left-ear"></div>
+                    <div class="bunny-ear right-ear"></div>
+                    <div class="bunny-face">
+                        <span class="bunny-number">2</span>
+                        <span class="bunny-stamp"></span>
+                    </div>
+                </div>
+                <div class="bunny-slot" data-index="2">
+                    <div class="bunny-ear left-ear"></div>
+                    <div class="bunny-ear right-ear"></div>
+                    <div class="bunny-face">
+                        <span class="bunny-number">3</span>
+                        <span class="bunny-stamp"></span>
+                    </div>
+                </div>
+                <div class="bunny-slot" data-index="3">
+                    <div class="bunny-ear left-ear"></div>
+                    <div class="bunny-ear right-ear"></div>
+                    <div class="bunny-face">
+                        <span class="bunny-number">4</span>
+                        <span class="bunny-stamp"></span>
+                    </div>
+                </div>
+                <div class="bunny-slot" data-index="4">
+                    <div class="bunny-ear left-ear"></div>
+                    <div class="bunny-ear right-ear"></div>
+                    <div class="bunny-face">
+                        <span class="bunny-number">5</span>
+                        <span class="bunny-stamp"></span>
+                    </div>
+                </div>
+                <div class="bunny-slot" data-index="5">
+                    <div class="bunny-ear left-ear"></div>
+                    <div class="bunny-ear right-ear"></div>
+                    <div class="bunny-face">
+                        <span class="bunny-number">6</span>
+                        <span class="bunny-stamp"></span>
+                    </div>
+                </div>
+                <div class="bunny-slot" data-index="6">
+                    <div class="bunny-ear left-ear"></div>
+                    <div class="bunny-ear right-ear"></div>
+                    <div class="bunny-face">
+                        <span class="bunny-number">7</span>
+                        <span class="bunny-stamp"></span>
+                    </div>
+                </div>
+                <div class="bunny-slot" data-index="7">
+                    <div class="bunny-ear left-ear"></div>
+                    <div class="bunny-ear right-ear"></div>
+                    <div class="bunny-face">
+                        <span class="bunny-number">8</span>
+                        <span class="bunny-stamp"></span>
+                    </div>
+                </div>
+                <div class="bunny-slot" data-index="8">
+                    <div class="bunny-ear left-ear"></div>
+                    <div class="bunny-ear right-ear"></div>
+                    <div class="bunny-face">
+                        <span class="bunny-number">9</span>
+                        <span class="bunny-stamp"></span>
+                    </div>
+                </div>
+                <div class="bunny-slot" data-index="9">
+                    <div class="bunny-ear left-ear"></div>
+                    <div class="bunny-ear right-ear"></div>
+                    <div class="bunny-face">
+                        <span class="bunny-number">10</span>
+                        <span class="bunny-stamp"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-text">도장 개수: <span id="sticker-count">0</span>/10</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="message" id="message"></div>
+    </div>
+
+    <!-- 비밀번호 모달 -->
+    <div class="modal" id="passwordModal">
+        <div class="modal-content">
+            <h3>🔐 비밀번호를 입력해주세요</h3>
+            <input type="password" id="passwordInput" placeholder="비밀번호 입력">
+            <div class="modal-buttons">
+                <button id="submitPassword">확인</button>
+                <button id="cancelPassword">취소</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 선물 모달 -->
+    <div class="modal" id="giftModal">
+        <div class="modal-content gift-content">
+            <h3>🎉 축하합니다! 🎉</h3>
+            <div class="gift-animation">
+                <div class="gift-box">🎁</div>
+                <div class="sparkles">✨✨✨</div>
+            </div>
+            <p>10개의 도장을 모두 모았어요!</p>
+            <p class="gift-message">특별한 선물을 받을 자격이 생겼어요! 🎊</p>
+            <button id="closeGift">확인</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
